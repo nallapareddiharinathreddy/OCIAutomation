@@ -45,6 +45,8 @@ public class NewPodMoveStatus extends TestBase {
             search.search_button.click();
             List<WebElement> webElements = driver.findElements(By.xpath("//a[@class='label_nothing']"));
             System.out.println(webElements.size());
+            System.out.println(webElements.size());
+
             if(webElements.isEmpty())
             {
                 System.out.println(podmovecomponentName+ " is not  retunring no results In Search page");
