@@ -1,0 +1,26 @@
+<!-- <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" > -->
+
+
+<suite name="Suite1" verbose="1">
+
+    <listeners>
+        <listener class-name="com.OCI.utils.Listener"/>
+    </listeners>
+    <test name="Regressionnew">
+        <classes>
+            <!--<class name="com.OCI.TestCases.TssApplication_Container_Operations"/> -->
+            <class name="com.OCI.TestCases.NewPodMoveStatus"/>
+
+            <!-- <methods>
+                 <include name="Start" />
+                 <include name="Stop" />
+                 <include name="reStart" />
+                 <include name="dump_Threads" />
+                 <include name="rolling_Restart" />
+                 <include name="hard_Stop" />
+
+             </methods> -->
+
+        </classes>
+    </test>
+</suite>
