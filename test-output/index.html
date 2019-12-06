@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>D:\OCIAutomation\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 6 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OCI.TestCases.TssApplication_Container_Operations" class="method navigator-link" hash-for-method="Start">Start</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OCI.TestCases.TssApplication_Container_Operations" class="method navigator-link" hash-for-method="Stop">Stop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OCI.TestCases.TssApplication_Container_Operations" class="method navigator-link" hash-for-method="dump_Threads">dump_Threads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OCI.TestCases.TssApplication_Container_Operations" class="method navigator-link" hash-for-method="hard_Stop">hard_Stop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OCI.TestCases.TssApplication_Container_Operations" class="method navigator-link" hash-for-method="reStart">reStart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OCI.TestCases.TssApplication_Container_Operations" class="method navigator-link" hash-for-method="rolling_Restart">rolling_Restart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.OCI.TestCases.TssApplication_Container_Operations</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Start">
+                  </a> <!-- Start -->
+                  <span class="method-name">Start</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.OCI.TestCases.TssApplication_Container_Operations.Start(TssApplication_Container_Operations.java:166)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Stop">
+                  </a> <!-- Stop -->
+                  <span class="method-name">Stop</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.OCI.TestCases.TssApplication_Container_Operations.Stop(TssApplication_Container_Operations.java:103)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dump_Threads">
+                  </a> <!-- dump_Threads -->
+                  <span class="method-name">dump_Threads</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.OCI.TestCases.TssApplication_Container_Operations.dump_Threads(TssApplication_Container_Operations.java:284)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hard_Stop">
+                  </a> <!-- hard_Stop -->
+                  <span class="method-name">hard_Stop</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.OCI.TestCases.TssApplication_Container_Operations.hard_Stop(TssApplication_Container_Operations.java:399)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reStart">
+                  </a> <!-- reStart -->
+                  <span class="method-name">reStart</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.OCI.TestCases.TssApplication_Container_Operations.reStart(TssApplication_Container_Operations.java:227)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rolling_Restart">
+                  </a> <!-- rolling_Restart -->
+                  <span class="method-name">rolling_Restart</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.OCI.TestCases.TssApplication_Container_Operations.rolling_Restart(TssApplication_Container_Operations.java:341)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\OCIAutomation\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.OCI.utils.Listener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Regressionnew&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.OCI.TestCases.TssApplication_Container_Operations&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regressionnew --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Regressionnew (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Stop')
+data.setCell(0, 2, 'com.OCI.TestCases.TssApplication_Container_Operations')
+data.setCell(0, 3, 115300);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'hard_Stop')
+data.setCell(1, 2, 'com.OCI.TestCases.TssApplication_Container_Operations')
+data.setCell(1, 3, 5169);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'reStart')
+data.setCell(2, 2, 'com.OCI.TestCases.TssApplication_Container_Operations')
+data.setCell(2, 3, 5164);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'dump_Threads')
+data.setCell(3, 2, 'com.OCI.TestCases.TssApplication_Container_Operations')
+data.setCell(3, 3, 5115);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Start')
+data.setCell(4, 2, 'com.OCI.TestCases.TssApplication_Container_Operations')
+data.setCell(4, 3, 5101);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'rolling_Restart')
+data.setCell(5, 2, 'com.OCI.TestCases.TssApplication_Container_Operations')
+data.setCell(5, 3, 5086);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">hard_Stop</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_hard_Stop_11-29-2019 15-04-47.jpg height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_hard_Stop_11-29-2019 15-04-48full_scren.jpg alt=yes height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_hard_Stop_11-29-2019 15-04-48.jpg height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_hard_Stop_11-29-2019 15-04-49full_scren.jpg alt=yes height='100' width='100'/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">dump_Threads</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_dump_Threads_11-29-2019 15-04-33.jpg height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_dump_Threads_11-29-2019 15-04-34full_scren.jpg alt=yes height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_dump_Threads_11-29-2019 15-04-34.jpg height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_dump_Threads_11-29-2019 15-04-35full_scren.jpg alt=yes height='100' width='100'/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">rolling_Restart</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_rolling_Restart_11-29-2019 15-04-40.jpg height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_rolling_Restart_11-29-2019 15-04-41full_scren.jpg alt=yes height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_rolling_Restart_11-29-2019 15-04-41.jpg height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_rolling_Restart_11-29-2019 15-04-42full_scren.jpg alt=yes height='100' width='100'/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Stop</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_Stop_11-29-2019 15-04-19.jpg height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_Stop_11-29-2019 15-04-20full_scren.jpg alt=yes height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_Stop_11-29-2019 15-04-20.jpg height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_Stop_11-29-2019 15-04-21full_scren.jpg alt=yes height='100' width='100'/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Start</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_Start_11-29-2019 15-04-55.jpg height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_Start_11-29-2019 15-04-55full_scren.jpg alt=yes height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_Start_11-29-2019 15-04-56.jpg height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_Start_11-29-2019 15-04-57full_scren.jpg alt=yes height='100' width='100'/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">reStart</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_reStart_11-29-2019 15-04-26.jpg height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_reStart_11-29-2019 15-04-27full_scren.jpg alt=yes height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_reStart_11-29-2019 15-04-27.jpg height='100' width='100'/></span>
+                <span class="reporter-method-output"><img src=D:\OCIAutomation\src\Screenshots\Failure_reStart_11-29-2019 15-04-28full_scren.jpg alt=yes height='100' width='100'/></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.OCI.TestCases.TssApplication_Container_Operations</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">tss_Login</span>
+                <span class="method-start">5702 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Stop</span>
+                <span class="method-start">20814 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">reStart</span>
+                <span class="method-start">138057 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">dump_Threads</span>
+                <span class="method-start">145071 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">rolling_Restart</span>
+                <span class="method-start">151997 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">hard_Stop</span>
+                <span class="method-start">158982 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Start</span>
+                <span class="method-start">165960 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tss_Logout</span>
+                <span class="method-start">173755 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">174982 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

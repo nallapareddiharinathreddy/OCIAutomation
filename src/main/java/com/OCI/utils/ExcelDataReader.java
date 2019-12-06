@@ -36,6 +36,7 @@ public class ExcelDataReader extends TestBase {
             StartCol=0;
             int lastrow=ExcelWSheet.getLastRowNum();
             int totalcolums=ExcelWSheet.getRow(0).getPhysicalNumberOfCells();
+
         //System.out.println(totalcolums);
         //System.out.println(lastrow);
             int rn,cn;

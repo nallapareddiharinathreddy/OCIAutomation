@@ -16,8 +16,8 @@ public class Listener extends TestBase implements ITestListener  {
     public void onTestSuccess(ITestResult result) {
         try {
             //System.out.println("Test case  :" + result.getName()+" is passed");
-            String TestName="Success_"+result.getName();
-            Take_Screen_Shot.take_screenshot(driver, TestName);
+           String TestName="Success_"+result.getName();
+           Take_Screen_Shot.take_screenshot(driver, TestName);
             Take_Screen_Shot.fullScreenShot(driver,TestName);
 
         } catch (Exception e) {
@@ -29,7 +29,7 @@ public class Listener extends TestBase implements ITestListener  {
     public void onTestFailure(ITestResult result) {
         //Take_Screen_Shot.take_screenshot(driver,result.getName());
         try {
-            System.out.println("Test case :" + result.getName()+" is failed");
+            //System.out.println("Test case :" + result.getName()+" is failed");
             String TestName="Failure_"+result.getName();
             Take_Screen_Shot.take_screenshot(driver, TestName);
             Take_Screen_Shot.fullScreenShot(driver,TestName);

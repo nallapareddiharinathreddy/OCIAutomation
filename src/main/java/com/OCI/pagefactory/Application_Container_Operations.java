@@ -16,7 +16,7 @@ public class Application_Container_Operations {
     public WebElement application_container_operations;
 
     @FindBy(how=How.ID,using="label_for_value_operation_stop")
-    public WebElement stop;
+    public   WebElement stop;
 
     @FindBy(how=How.ID,using="label_for_value_operation_start")
     public WebElement start;

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.OCI.utils.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Regressionnew(failed)">
+    <classes>
+      <class name="com.OCI.TestCases.TssApplication_Container_Operations">
+        <methods>
+          <include name="tss_Logout"/>
+          <include name="dump_Threads"/>
+          <include name="openBrowser"/>
+          <include name="rolling_Restart"/>
+          <include name="Start"/>
+          <include name="Stop"/>
+          <include name="hard_Stop"/>
+          <include name="reStart"/>
+          <include name="tss_Login"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.OCI.TestCases.TssApplication_Container_Operations -->
+    </classes>
+  </test> <!-- Regressionnew(failed) -->
+</suite> <!-- Failed suite [Suite] -->

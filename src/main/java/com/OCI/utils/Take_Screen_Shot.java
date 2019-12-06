@@ -23,8 +23,10 @@ public class Take_Screen_Shot extends TestBase {
         File fp=scrnShot.getScreenshotAs(OutputType.FILE);
         File DestFile=new File("D:\\OCIAutomation\\src\\Screenshots\\"+Name+"_"+timestamp()+".jpg");
         FileUtils.copyFile(fp,DestFile);
-        Reporter.log("<a href='"+ DestFile.getAbsolutePath() + "'> <img src='"+ DestFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
 
+        System.out.println(DestFile.toString());
+        //Reporter.log("<a href="+ DestFile.getAbsolutePath() + "> <img src="+ DestFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
+        Reporter.log("<img src="+DestFile+" height='100' width='100'/>");
     }
 
     public static String timestamp()
@@ -41,8 +43,10 @@ public class Take_Screen_Shot extends TestBase {
         File fp=full_Screen_shot.getScreenshotAs(OutputType.FILE);
         File DestFile=new File("D:\\OCIAutomation\\src\\Screenshots\\"+Name+"_"+timestamp()+"full_scren"+".jpg");
         FileUtils.copyFile(fp,DestFile);
-        Reporter.log("<a href='"+ DestFile.getAbsolutePath() + "'> <img src='"+ DestFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
-
+        System.out.println(DestFile.toString());
+        String yes="yes";
+        //Reporter.log("<a href="+ DestFile.getAbsolutePath() + "> <img src="+ DestFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
+        Reporter.log("<img src="+DestFile+" alt="+yes+" height='100' width='100'/>");
     }
 
 

@@ -1,12 +1,13 @@
 package com.OCI.TestCases;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -15,8 +16,9 @@ import com.OCI.testBase.*;
 import com.OCI.Login.*;
 import com.OCI.pagefactory.*;
 import com.OCI.utils.*;
-import org.openqa.selenium.support.ui.Select;
+
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 
 @Listeners(com.OCI.utils.Listener.class)
@@ -76,6 +78,7 @@ public class TssApplication_Container_Operations extends TestBase {
                 if(Status.equalsIgnoreCase("Success"))
                 {
                     System.out.println("Stop operation executed successfully");
+                    Assert.assertTrue(true);
                     tss_app_operations.close_button.click();
                     tss_app_operations.actions.click();
                     ac.moveToElement(tss_app_operations.get_Status_tomcat).click().perform();
@@ -90,7 +93,9 @@ public class TssApplication_Container_Operations extends TestBase {
                 {
                     System.out.println("Stop operation execution failed");
                     Assert.fail("Action is failed");
+
                     tss_app_operations.close_button.click();
+
                 }
 
             }
@@ -136,6 +141,7 @@ public class TssApplication_Container_Operations extends TestBase {
                     //Take_Screen_Shot.take_screenshot(driver,"Start");
                     System.out.println("Start operation execution failed");
                     Assert.fail("Action is failed");
+                    Assert.assertTrue(false);
                     tss_app_operations.close_button.click();
                 }
 
@@ -398,7 +404,7 @@ public class TssApplication_Container_Operations extends TestBase {
 
  public  void test()
     {
-
+     Wait wait= new FluentWait<WebDriver>(driver).withTimeout(30, TimeUnit.SECONDS).pollingEvery(5,TimeUnit.MICROSECONDS).ignoring(NoSuchElementException.class) ;
     }
 
 

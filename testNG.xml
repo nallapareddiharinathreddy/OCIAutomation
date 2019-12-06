@@ -1,7 +1,8 @@
-<!-- <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" > -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" > -->
 
 
-<suite name="Suite1" verbose="1">
+<suite name="Suite" verbose="1">
 
     <listeners>
         <listener class-name="com.OCI.utils.Listener"/>
@@ -9,7 +10,7 @@
     <test name="Regressionnew">
         <classes>
             <!--<class name="com.OCI.TestCases.TssApplication_Container_Operations"/> -->
-            <class name="com.OCI.TestCases.NewPodMoveStatus"/>
+            <class name="com.OCI.TestCases.TssApplication_Container_Operations"/>
 
             <!-- <methods>
                  <include name="Start" />
