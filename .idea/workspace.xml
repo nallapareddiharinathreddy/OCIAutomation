@@ -41,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Amazon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -392,11 +392,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.Learn" />
-      <item itemvalue="Maven.OCI [~Dtest=TestName,test]" />
-      <item itemvalue="TestNG.D:/OCIAutomation/testng.xml" />
       <item itemvalue="Application.New" />
       <item itemvalue="Application.TestInheritance2" />
       <item itemvalue="Application.Amazon" />
+      <item itemvalue="Maven.OCI [~Dtest=TestName,test]" />
+      <item itemvalue="TestNG.D:/OCIAutomation/testng.xml" />
     </list>
     <recent_temporary>
       <list>
@@ -862,8 +862,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Amazon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="17" />
         </state>
       </provider>
     </entry>

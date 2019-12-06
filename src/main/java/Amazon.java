@@ -12,7 +12,7 @@ class BabyDog extends Dog{
 class Amazon{
     public static void main(String args[]){
         BabyDog d=new BabyDog();
-        System.out.println("test");
+        //System.out.println("test");
 
     }}
 
