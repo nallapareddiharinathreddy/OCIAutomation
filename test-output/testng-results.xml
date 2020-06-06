@@ -77,28 +77,28 @@
   <suite started-at="2019-11-29T09:32:08Z" name="Suite" finished-at="2019-11-29T09:34:58Z" duration-ms="169228">
     <groups>
     </groups>
-    <test started-at="2019-11-29T09:32:08Z" name="Regressionnew" finished-at="2019-11-29T09:34:58Z" duration-ms="169228">
-      <class name="com.OCI.TestCases.TssApplication_Container_Operations">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:32:03Z" name="openBrowser" finished-at="2019-11-29T09:32:08Z" duration-ms="5689" status="PASS">
+    <com.OCI.test.test started-at="2019-11-29T09:32:08Z" name="Regressionnew" finished-at="2019-11-29T09:34:58Z" duration-ms="169228">
+      <class name="OCI.TestCases.TssApplication_Container_Operations">
+        <com.OCI.test.test-method is-config="true" signature="openBrowser()[pri:0, instance:OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:32:03Z" name="openBrowser" finished-at="2019-11-29T09:32:08Z" duration-ms="5689" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="tss_Login()[pri:0, instance:com.OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:32:08Z" name="tss_Login" finished-at="2019-11-29T09:32:24Z" duration-ms="15101" status="PASS">
+        </com.OCI.test.test-method> <!-- openBrowser -->
+        <com.OCI.test.test-method is-config="true" signature="tss_Login()[pri:0, instance:OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:32:08Z" name="tss_Login" finished-at="2019-11-29T09:32:24Z" duration-ms="15101" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tss_Login -->
-        <test-method signature="Stop()[pri:1, instance:com.OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:32:24Z" name="Stop" finished-at="2019-11-29T09:34:19Z" duration-ms="115300" status="FAIL">
+        </com.OCI.test.test-method> <!-- tss_Login -->
+        <com.OCI.test.test-method signature="Stop()[pri:1, instance:OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:32:24Z" name="Stop" finished-at="2019-11-29T09:34:19Z" duration-ms="115300" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+                <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at com.OCI.TestCases.TssApplication_Container_Operations.Stop(TssApplication_Container_Operations.java:103)
+at OCI.TestCases.TssApplication_Container_Operations.Stop(TssApplication_Container_Operations.java:103)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -140,19 +140,19 @@ at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
               <![CDATA[<img src=D:\OCIAutomation\src\Screenshots\Failure_Stop_11-29-2019 15-04-21full_scren.jpg alt=yes height='100' width='100'/>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Stop -->
-        <test-method signature="reStart()[pri:2, instance:com.OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:34:21Z" name="reStart" finished-at="2019-11-29T09:34:26Z" duration-ms="5164" status="FAIL">
+        </com.OCI.test.test-method> <!-- Stop -->
+        <com.OCI.test.test-method signature="reStart()[pri:2, instance:OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:34:21Z" name="reStart" finished-at="2019-11-29T09:34:26Z" duration-ms="5164" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+                <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at com.OCI.TestCases.TssApplication_Container_Operations.reStart(TssApplication_Container_Operations.java:227)
+at OCI.TestCases.TssApplication_Container_Operations.reStart(TssApplication_Container_Operations.java:227)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -194,19 +194,19 @@ at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
               <![CDATA[<img src=D:\OCIAutomation\src\Screenshots\Failure_reStart_11-29-2019 15-04-28full_scren.jpg alt=yes height='100' width='100'/>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- reStart -->
-        <test-method signature="dump_Threads()[pri:3, instance:com.OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:34:28Z" name="dump_Threads" finished-at="2019-11-29T09:34:33Z" duration-ms="5115" status="FAIL">
+        </com.OCI.test.test-method> <!-- reStart -->
+        <com.OCI.test.test-method signature="dump_Threads()[pri:3, instance:OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:34:28Z" name="dump_Threads" finished-at="2019-11-29T09:34:33Z" duration-ms="5115" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+                <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at com.OCI.TestCases.TssApplication_Container_Operations.dump_Threads(TssApplication_Container_Operations.java:284)
+at OCI.TestCases.TssApplication_Container_Operations.dump_Threads(TssApplication_Container_Operations.java:284)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -248,19 +248,19 @@ at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
               <![CDATA[<img src=D:\OCIAutomation\src\Screenshots\Failure_dump_Threads_11-29-2019 15-04-35full_scren.jpg alt=yes height='100' width='100'/>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- dump_Threads -->
-        <test-method signature="rolling_Restart()[pri:4, instance:com.OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:34:35Z" name="rolling_Restart" finished-at="2019-11-29T09:34:40Z" duration-ms="5086" status="FAIL">
+        </com.OCI.test.test-method> <!-- dump_Threads -->
+        <com.OCI.test.test-method signature="rolling_Restart()[pri:4, instance:OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:34:35Z" name="rolling_Restart" finished-at="2019-11-29T09:34:40Z" duration-ms="5086" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+                <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at com.OCI.TestCases.TssApplication_Container_Operations.rolling_Restart(TssApplication_Container_Operations.java:341)
+at OCI.TestCases.TssApplication_Container_Operations.rolling_Restart(TssApplication_Container_Operations.java:341)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -302,19 +302,19 @@ at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
               <![CDATA[<img src=D:\OCIAutomation\src\Screenshots\Failure_rolling_Restart_11-29-2019 15-04-42full_scren.jpg alt=yes height='100' width='100'/>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- rolling_Restart -->
-        <test-method signature="hard_Stop()[pri:5, instance:com.OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:34:42Z" name="hard_Stop" finished-at="2019-11-29T09:34:47Z" duration-ms="5169" status="FAIL">
+        </com.OCI.test.test-method> <!-- rolling_Restart -->
+        <com.OCI.test.test-method signature="hard_Stop()[pri:5, instance:OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:34:42Z" name="hard_Stop" finished-at="2019-11-29T09:34:47Z" duration-ms="5169" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+                <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at com.OCI.TestCases.TssApplication_Container_Operations.hard_Stop(TssApplication_Container_Operations.java:399)
+at OCI.TestCases.TssApplication_Container_Operations.hard_Stop(TssApplication_Container_Operations.java:399)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -356,19 +356,19 @@ at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
               <![CDATA[<img src=D:\OCIAutomation\src\Screenshots\Failure_hard_Stop_11-29-2019 15-04-49full_scren.jpg alt=yes height='100' width='100'/>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- hard_Stop -->
-        <test-method signature="Start()[pri:6, instance:com.OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:34:49Z" name="Start" finished-at="2019-11-29T09:34:54Z" duration-ms="5101" status="FAIL">
+        </com.OCI.test.test-method> <!-- hard_Stop -->
+        <com.OCI.test.test-method signature="Start()[pri:6, instance:OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:34:49Z" name="Start" finished-at="2019-11-29T09:34:54Z" duration-ms="5101" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+                <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at com.OCI.TestCases.TssApplication_Container_Operations.Start(TssApplication_Container_Operations.java:166)
+at OCI.TestCases.TssApplication_Container_Operations.Start(TssApplication_Container_Operations.java:166)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -410,16 +410,16 @@ at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
               <![CDATA[<img src=D:\OCIAutomation\src\Screenshots\Failure_Start_11-29-2019 15-04-57full_scren.jpg alt=yes height='100' width='100'/>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Start -->
-        <test-method is-config="true" signature="tss_Logout()[pri:0, instance:com.OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:34:57Z" name="tss_Logout" finished-at="2019-11-29T09:34:58Z" duration-ms="1162" status="PASS">
+        </com.OCI.test.test-method> <!-- Start -->
+        <com.OCI.test.test-method is-config="true" signature="tss_Logout()[pri:0, instance:OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:34:57Z" name="tss_Logout" finished-at="2019-11-29T09:34:58Z" duration-ms="1162" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tss_Logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:34:58Z" name="closeBrowser" finished-at="2019-11-29T09:35:00Z" duration-ms="2096" status="PASS">
+        </com.OCI.test.test-method> <!-- tss_Logout -->
+        <com.OCI.test.test-method is-config="true" signature="closeBrowser()[pri:0, instance:OCI.TestCases.TssApplication_Container_Operations@17f7cd29]" started-at="2019-11-29T09:34:58Z" name="closeBrowser" finished-at="2019-11-29T09:35:00Z" duration-ms="2096" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.OCI.TestCases.TssApplication_Container_Operations -->
-    </test> <!-- Regressionnew -->
+        </com.OCI.test.test-method> <!-- closeBrowser -->
+      </class> <!-- OCI.TestCases.TssApplication_Container_Operations -->
+    </com.OCI.test.test> <!-- Regressionnew -->
   </suite> <!-- Suite -->
 </testng-results>
