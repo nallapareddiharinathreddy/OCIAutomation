@@ -2,11 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
   <listeners>
-    <listener class-name="OCI.utils.Listener"/>
+    <listener class-name="RCC.utils.Listener"/>
   </listeners>
   <com.OCI.test.test thread-count="5" name="Regressionnew(failed)">
     <classes>
-      <class name="OCI.TestCases.TssApplication_Container_Operations">
+      <class name="RCC.TestCases.TssApplication_Container_Operations">
         <methods>
           <include name="tss_Logout"/>
           <include name="dump_Threads"/>
@@ -19,7 +19,7 @@
           <include name="tss_Login"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- OCI.TestCases.TssApplication_Container_Operations -->
+      </class> <!-- RCC.TestCases.TssApplication_Container_Operations -->
     </classes>
   </com.OCI.test.test> <!-- Regressionnew(failed) -->
 </suite> <!-- Failed suite [Suite] -->
