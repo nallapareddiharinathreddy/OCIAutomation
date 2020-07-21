@@ -65,6 +65,20 @@ public class ActionStatus extends TestBase {
 
         return running;
     }
+    public boolean dbActionStatusNotRunning()
+    {
+        wait=new WebDriverWait(driver,12000);
+        boolean running=false;
+
+        if(wait.until(ExpectedConditions.invisibilityOfElementWithText(By.id("__status"),"Running...")))
+        {
+            running=true;
+        }
+
+
+
+        return running;
+    }
 
     public void actionWait() throws Exception
     {

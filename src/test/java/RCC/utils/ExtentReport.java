@@ -4,6 +4,7 @@ import RCC.pagefactory.LoginPage;
 import RCC.testBase.TestBase;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
@@ -54,9 +55,6 @@ public class ExtentReport extends TestBase implements ITestListener {
             String screenshotPath="./Screenshots/"+pp+".jpg";
             //System.out.println(screenshotPath);
             loggerextent.log(Status.FAIL," " + loggerextent.addScreenCaptureFromPath(screenshotPath));
-
-
-
 
         } catch (Exception e) {
             System.out.println(e);

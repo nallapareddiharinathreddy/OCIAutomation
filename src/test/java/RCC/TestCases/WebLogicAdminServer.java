@@ -165,32 +165,32 @@ public class WebLogicAdminServer extends TestBase {
             loggerextent.assignCategory("SmokeTesting");
             loggerextent.assignAuthor("Harinathreddy");
             loggerextent.info("Start WebLogic Cluster operation started");
-            Application_Container_Operations weblogicmanagedserver = PageFactory.initElements(driver, Application_Container_Operations.class);
-            weblogicmanagedserver.actions.click();
+            Application_Container_Operations weblogicadminserver = PageFactory.initElements(driver, Application_Container_Operations.class);
+            weblogicadminserver.actions.click();
             Actions ac = new Actions(driver);
-            ac.moveToElement(weblogicmanagedserver.start_WebLogic_Cluster).click().perform();
+            ac.moveToElement(weblogicadminserver.start_WebLogic_Cluster).click().perform();
             loggerextent.info("Start WebLogic Cluster operation selected");
-            weblogicmanagedserver.next_button.click();
+            weblogicadminserver.next_button.click();
             if(zone.maintainance()) {
-                weblogicmanagedserver.yes_option.click();
-                weblogicmanagedserver.next_button.click();
+                weblogicadminserver.yes_option.click();
+                weblogicadminserver.next_button.click();
             }
-            String current_status = weblogicmanagedserver.action_status.getText();
+            String current_status = weblogicadminserver.action_status.getText();
             loggerextent.info("Current status :" + current_status);
             if(rcc_action.actionStatusNotRunning())
             {
                 loggerextent.info("Start WebLogic Cluster operation executed");
-                String status=weblogicmanagedserver.action_status.getText();
+                String status=weblogicadminserver.action_status.getText();
                 if(status.equalsIgnoreCase("Success"))
                 {
                     loggerextent.info("Start WebLogic Cluster operation execution status as Success");
-                    weblogicmanagedserver.close_button.click();
-                    weblogicmanagedserver.actions.click();
-                    ac.moveToElement(weblogicmanagedserver.weblogic_admin_server_status).click().perform();
-                    weblogicmanagedserver.next_button.click();
+                    weblogicadminserver.close_button.click();
+                    weblogicadminserver.actions.click();
+                    ac.moveToElement(weblogicadminserver.weblogic_admin_server_status).click().perform();
+                    weblogicadminserver.next_button.click();
                     if(rcc_action.actionStatusSuccess())
                     {
-                        if (weblogicmanagedserver.admin_server_start_status.isDisplayed()) {
+                        if (weblogicadminserver.admin_server_start_status.isDisplayed()) {
                             loggerextent.info("admin server is running");
                         }
                         if (zone.teezonestatus(prop.getProperty("TEEzoneURL"))) {
@@ -242,32 +242,32 @@ public class WebLogicAdminServer extends TestBase {
             loggerextent.assignCategory("SmokeTesting");
             loggerextent.assignAuthor("Harinathreddy");
             loggerextent.info("Restart WebLogic Cluster operation started");
-            Application_Container_Operations weblogicmanagedserver = PageFactory.initElements(driver, Application_Container_Operations.class);
-            weblogicmanagedserver.actions.click();
+            Application_Container_Operations weblogicadminserver = PageFactory.initElements(driver, Application_Container_Operations.class);
+            weblogicadminserver.actions.click();
             Actions ac = new Actions(driver);
-            ac.moveToElement(weblogicmanagedserver.restart_WebLogic_Cluster).click().perform();
+            ac.moveToElement(weblogicadminserver.restart_WebLogic_Cluster).click().perform();
             loggerextent.info("Restart WebLogic Cluster operation selected");
-            weblogicmanagedserver.next_button.click();
+            weblogicadminserver.next_button.click();
             if(zone.maintainance()) {
-                weblogicmanagedserver.yes_option.click();
-                weblogicmanagedserver.next_button.click();
+                weblogicadminserver.yes_option.click();
+                weblogicadminserver.next_button.click();
             }
-            String current_status = weblogicmanagedserver.action_status.getText();
+            String current_status = weblogicadminserver.action_status.getText();
             loggerextent.info("Current status :" + current_status);
             if(rcc_action.actionStatusNotRunning())
             {
                 loggerextent.info("Restart WebLogic Cluster operation executed");
-                String status=weblogicmanagedserver.action_status.getText();
+                String status=weblogicadminserver.action_status.getText();
                 if(status.equalsIgnoreCase("Success"))
                 {
                     loggerextent.info("Restart WebLogic Cluster operation execution status as Success");
-                    weblogicmanagedserver.close_button.click();
-                    weblogicmanagedserver.actions.click();
-                    ac.moveToElement(weblogicmanagedserver.weblogic_admin_server_status).click().perform();
-                    weblogicmanagedserver.next_button.click();
+                    weblogicadminserver.close_button.click();
+                    weblogicadminserver.actions.click();
+                    ac.moveToElement(weblogicadminserver.weblogic_admin_server_status).click().perform();
+                    weblogicadminserver.next_button.click();
                     if(rcc_action.actionStatusSuccess())
                     {
-                        if (weblogicmanagedserver.admin_server_start_status.isDisplayed()) {
+                        if (weblogicadminserver.admin_server_start_status.isDisplayed()) {
                             loggerextent.info("admin server is running");
                         }
                         if (zone.teezonestatus(prop.getProperty("TEEzoneURL"))) {
@@ -399,32 +399,32 @@ public class WebLogicAdminServer extends TestBase {
             loggerextent.assignCategory("SmokeTesting");
             loggerextent.assignAuthor("Harinathreddy");
             loggerextent.info("Start Admin Server operation started");
-            Application_Container_Operations weblogicmanagedserver = PageFactory.initElements(driver, Application_Container_Operations.class);
-            weblogicmanagedserver.actions.click();
+            Application_Container_Operations weblogicadminserver = PageFactory.initElements(driver, Application_Container_Operations.class);
+            weblogicadminserver.actions.click();
             Actions ac = new Actions(driver);
-            ac.moveToElement(weblogicmanagedserver.start_Admin_Server).click().perform();
+            ac.moveToElement(weblogicadminserver.start_Admin_Server).click().perform();
             loggerextent.info("Start Admin Server operation selected");
-            weblogicmanagedserver.next_button.click();
+            weblogicadminserver.next_button.click();
             if(zone.maintainance()) {
-                weblogicmanagedserver.yes_option.click();
-                weblogicmanagedserver.next_button.click();
+                weblogicadminserver.yes_option.click();
+                weblogicadminserver.next_button.click();
             }
-            String current_status = weblogicmanagedserver.action_status.getText();
+            String current_status = weblogicadminserver.action_status.getText();
             loggerextent.info("Current status :" + current_status);
             if(rcc_action.actionStatusNotRunning())
             {
                 loggerextent.info("Start Admin Server operation executed");
-                String status=weblogicmanagedserver.action_status.getText();
+                String status=weblogicadminserver.action_status.getText();
                 if(status.equalsIgnoreCase("Success"))
                 {
                     loggerextent.info("Start Admin Server operation execution status as Success");
-                    weblogicmanagedserver.close_button.click();
-                    weblogicmanagedserver.actions.click();
-                    ac.moveToElement(weblogicmanagedserver.weblogic_admin_server_status).click().perform();
-                    weblogicmanagedserver.next_button.click();
+                    weblogicadminserver.close_button.click();
+                    weblogicadminserver.actions.click();
+                    ac.moveToElement(weblogicadminserver.weblogic_admin_server_status).click().perform();
+                    weblogicadminserver.next_button.click();
                     if(rcc_action.actionStatusSuccess())
                     {
-                        if (weblogicmanagedserver.admin_server_start_status.isDisplayed()) {
+                        if (weblogicadminserver.admin_server_start_status.isDisplayed()) {
                             loggerextent.info("admin server is running");
                         }
                         else {
@@ -474,35 +474,201 @@ public class WebLogicAdminServer extends TestBase {
             loggerextent.assignCategory("SmokeTesting");
             loggerextent.assignAuthor("Harinathreddy");
             loggerextent.info("Restart Admin Server operation started");
-            Application_Container_Operations weblogicmanagedserver = PageFactory.initElements(driver, Application_Container_Operations.class);
-            weblogicmanagedserver.actions.click();
+            Application_Container_Operations weblogicadminserver = PageFactory.initElements(driver, Application_Container_Operations.class);
+            weblogicadminserver.actions.click();
             Actions ac = new Actions(driver);
-            ac.moveToElement(weblogicmanagedserver.restart_Admin_Server).click().perform();
+            ac.moveToElement(weblogicadminserver.restart_Admin_Server).click().perform();
             loggerextent.info("Restart Admin Server operation selected");
-            weblogicmanagedserver.next_button.click();
+            weblogicadminserver.next_button.click();
             if(zone.maintainance()) {
-                weblogicmanagedserver.yes_option.click();
-                weblogicmanagedserver.next_button.click();
+                weblogicadminserver.yes_option.click();
+                weblogicadminserver.next_button.click();
             }
-            String current_status = weblogicmanagedserver.action_status.getText();
+            String current_status = weblogicadminserver.action_status.getText();
             loggerextent.info("Current status :" + current_status);
             if(rcc_action.actionStatusNotRunning())
             {
                 loggerextent.info("Restart Admin Server operation executed");
-                String status=weblogicmanagedserver.action_status.getText();
+                String status=weblogicadminserver.action_status.getText();
                 if(status.equalsIgnoreCase("Success"))
                 {
                     loggerextent.info("Restart Admin Server operation execution status as Success");
-                    weblogicmanagedserver.close_button.click();
-                    weblogicmanagedserver.actions.click();
-                    ac.moveToElement(weblogicmanagedserver.weblogic_admin_server_status).click().perform();
-                    weblogicmanagedserver.next_button.click();
+                    weblogicadminserver.close_button.click();
+                    weblogicadminserver.actions.click();
+                    ac.moveToElement(weblogicadminserver.weblogic_admin_server_status).click().perform();
+                    weblogicadminserver.next_button.click();
                     if(rcc_action.actionStatusSuccess())
                     {
-                        if (weblogicmanagedserver.admin_server_start_status.isDisplayed()) {
+                        if (weblogicadminserver.admin_server_start_status.isDisplayed()) {
                             loggerextent.info("admin server is running");
                         }
                          else {
+                            loggerextent.log(Status.FAIL,"admin server is stopped");
+                            Assert.fail("admin server is stopped");
+                        }
+                    }
+                    else {
+                        loggerextent.log(Status.FAIL,"get status  operation failed");
+                        Assert.fail("get status  operation failed");
+                    }
+
+
+                }
+                if (status.equalsIgnoreCase("Failed"))
+                {
+                    loggerextent.log(Status.FAIL,"Restart Admin Server operation execution status as Failed");
+                    Assert.fail("Action is failed");
+
+                }
+
+            }
+
+        }
+        catch (org.openqa.selenium.UnhandledAlertException e)
+        {
+
+            driver.switchTo().alert().accept();
+            loggerextent.log(Status.FAIL,e);
+            Assert.assertTrue(false,"e");
+
+
+        }
+        catch (Exception e) {
+            loggerextent.log(Status.FAIL,e);
+            Assert.assertTrue(false,"e");
+        }
+
+
+    }
+    @Test(priority = 7)
+    public void addContainer()
+    {
+        try {
+            //gerextent=ExtentReport.loggerextent;
+            loggerextent=ExtentReport.extent.createTest("weblogic cluster Add container operation");
+            loggerextent.assignCategory("SmokeTesting");
+            loggerextent.assignAuthor("Harinathreddy");
+            loggerextent.info("Add container operation started");
+            Application_Container_Operations weblogicadminserver = PageFactory.initElements(driver, Application_Container_Operations.class);
+            weblogicadminserver.actions.click();
+            Actions ac = new Actions(driver);
+            ac.moveToElement(weblogicadminserver.add_remove_containers).click().perform();
+            weblogicadminserver.add_container.click();
+            loggerextent.info("Add container operation selected");
+            weblogicadminserver.next_button.click();
+            weblogicadminserver.container_number.clear();
+            weblogicadminserver.container_number.sendKeys("1");
+            weblogicadminserver.server_name.clear();
+            weblogicadminserver.server_name.sendKeys(prop.getProperty("ContainerServer"));
+            weblogicadminserver.container_checkbox.click();
+            weblogicadminserver.next_button.click();
+            weblogicadminserver.next_button.click();
+            if(zone.maintainance()) {
+                weblogicadminserver.yes_option.click();
+                weblogicadminserver.next_button.click();
+            }
+            String current_status = weblogicadminserver.action_status.getText();
+            loggerextent.info("Current status :" + current_status);
+            if(rcc_action.actionStatusNotRunning())
+            {
+                loggerextent.info("Add container operation executed");
+                String status=weblogicadminserver.action_status.getText();
+                if(status.equalsIgnoreCase("Success"))
+                {
+                    loggerextent.info("Add container operation execution status as Success");
+                    weblogicadminserver.close_button.click();
+                    weblogicadminserver.actions.click();
+                    ac.moveToElement(weblogicadminserver.weblogic_admin_server_status).click().perform();
+                    weblogicadminserver.next_button.click();
+                    if(rcc_action.actionStatusSuccess())
+                    {
+                        if (weblogicadminserver.admin_server_start_status.isDisplayed()) {
+                            loggerextent.info("admin server is running");
+                        }
+                        else {
+                            loggerextent.log(Status.FAIL,"admin server is stopped");
+                            Assert.fail("admin server is stopped");
+                        }
+                    }
+                    else {
+                        loggerextent.log(Status.FAIL,"get status  operation failed");
+                        Assert.fail("get status  operation failed");
+                    }
+
+
+                }
+                if (status.equalsIgnoreCase("Failed"))
+                {
+                    loggerextent.log(Status.FAIL,"Restart Admin Server operation execution status as Failed");
+                    Assert.fail("Action is failed");
+
+                }
+
+            }
+
+        }
+        catch (org.openqa.selenium.UnhandledAlertException e)
+        {
+
+            driver.switchTo().alert().accept();
+            loggerextent.log(Status.FAIL,e);
+            Assert.assertTrue(false,"e");
+
+
+        }
+        catch (Exception e) {
+            loggerextent.log(Status.FAIL,e);
+            Assert.assertTrue(false,"e");
+        }
+
+
+    }
+    @Test(priority = 8)
+    public void removeContainer()
+    {
+        try {
+            //gerextent=ExtentReport.loggerextent;
+            loggerextent=ExtentReport.extent.createTest("weblogic cluster remove container operation");
+            loggerextent.assignCategory("SmokeTesting");
+            loggerextent.assignAuthor("Harinathreddy");
+            loggerextent.info("Remove container operation started");
+            Application_Container_Operations weblogicadminserver = PageFactory.initElements(driver, Application_Container_Operations.class);
+            weblogicadminserver.actions.click();
+            Actions ac = new Actions(driver);
+            ac.moveToElement(weblogicadminserver.add_remove_containers).click().perform();
+            weblogicadminserver.remove_container.click();
+            loggerextent.info("Remove container operation selected");
+            weblogicadminserver.next_button.click();
+            weblogicadminserver.container_number.clear();
+            weblogicadminserver.container_number.sendKeys("1");
+            weblogicadminserver.server_name.clear();
+            weblogicadminserver.server_name.sendKeys(prop.getProperty("ContainerServer"));
+            weblogicadminserver.container_checkbox.click();
+            weblogicadminserver.next_button.click();
+            weblogicadminserver.next_button.click();
+            if(zone.maintainance()) {
+                weblogicadminserver.yes_option.click();
+                weblogicadminserver.next_button.click();
+            }
+            String current_status = weblogicadminserver.action_status.getText();
+            loggerextent.info("Current status :" + current_status);
+            if(rcc_action.actionStatusNotRunning())
+            {
+                loggerextent.info("Add container operation executed");
+                String status=weblogicadminserver.action_status.getText();
+                if(status.equalsIgnoreCase("Success"))
+                {
+                    loggerextent.info("Add container operation execution status as Success");
+                    weblogicadminserver.close_button.click();
+                    weblogicadminserver.actions.click();
+                    ac.moveToElement(weblogicadminserver.weblogic_admin_server_status).click().perform();
+                    weblogicadminserver.next_button.click();
+                    if(rcc_action.actionStatusSuccess())
+                    {
+                        if (weblogicadminserver.admin_server_start_status.isDisplayed()) {
+                            loggerextent.info("admin server is running");
+                        }
+                        else {
                             loggerextent.log(Status.FAIL,"admin server is stopped");
                             Assert.fail("admin server is stopped");
                         }

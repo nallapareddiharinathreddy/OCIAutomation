@@ -54,7 +54,7 @@ public abstract class TestBase {
             }
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-            wait = new WebDriverWait(driver, 9000);
+            wait = new WebDriverWait(driver, 12000);
             //WebDriverWait wa=new WebDriverWait(driver,10);
             System.out.println(prop.getProperty("URL"));
             driver.get(prop.getProperty("URL"));

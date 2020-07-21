@@ -18,6 +18,12 @@ public class Application_Container_Operations {
     @FindBy(how=How.XPATH,using="//*[@class=\"dropmenudiv\"]/div/child::div/a[contains(text(),'Application container operations')]")
     public WebElement application_container_operations;
 
+    @FindBy(how=How.XPATH,using="//*[@class=\"dropmenudiv\"]/div/child::div/a[contains(text(),'Add Schema')]")
+    public WebElement add_schema;
+
+    @FindBy(how=How.XPATH,using="//*[@class=\"dropmenudiv\"]/div/child::div/a[contains(text(),'Deploy Domain')]")
+    public WebElement deploy_domain;
+
     @FindBy(how=How.XPATH,using="//*[@class=\"dropmenudiv\"]/div/child::div/a[contains(text(),'Stop WebLogic Cluster')]")
     public WebElement stop_WebLogic_Cluster;
 
@@ -41,6 +47,15 @@ public class Application_Container_Operations {
 
     @FindBy(how=How.XPATH,using="//*[@class=\"dropmenudiv\"]/div/child::div/a[contains(text(),'Schedule update config / graceful restart of webcluster')]")
     public WebElement Schedule_update_config_graceful_restart_of_webcluster;
+
+    @FindBy(how=How.XPATH,using="//*[@class=\"dropmenudiv\"]/div/child::div/a[contains(text(),'Stop Node Manager')]")
+    public WebElement stop_weblogic_node_manager;
+
+    @FindBy(how=How.XPATH,using="//*[@class=\"dropmenudiv\"]/div/child::div/a[contains(text(),'Restart Node Manager')]")
+    public WebElement restart_weblogic_node_manager;
+
+    @FindBy(how=How.XPATH,using="//*[@class=\"dropmenudiv\"]/div/child::div/a[contains(text(),'Start Node Manager')]")
+    public WebElement start_weblogic_node_manager;
 
     @FindBy(how=How.ID,using="label_for_value_operation_stop")
     public   WebElement stop;
@@ -105,11 +120,17 @@ public class Application_Container_Operations {
     @FindBy(how=How.XPATH,using="//*[@class=\"dropmenudiv\"]/div/child::div/a[contains(text(),'Get Status (Application Container)')]")
     public WebElement get_status_tee_appcontainer;
 
+    @FindBy(how=How.XPATH,using="//*[@class=\"dropmenudiv\"]/div/child::div/a[contains(text(),'Add / Remove containers')]")
+    public WebElement add_remove_containers;
+
     @FindBy(how=How.XPATH,using="//*[@class=\"dropmenudiv\"]/div/child::div/a[contains(text(),'Get Status')]")
     public WebElement weblogic_managed_server_status;
 
     @FindBy(how=How.XPATH,using="//*[@class=\"dropmenudiv\"]/div/child::div/a[contains(text(),'Get Status')]")
     public WebElement weblogic_admin_server_status;
+
+    @FindBy(how=How.XPATH,using="//*[@class=\"dropmenudiv\"]/div/child::div/a[contains(text(),'Get Status')]")
+    public WebElement weblogic_node_manager_status;
 
     @FindBy(how=How.XPATH,using="//*[@class=\"dropmenudiv\"]/div/child::div/a[contains(text(),'JVM Dump Heap')]")
     public WebElement jvm_heap_dump;
@@ -134,6 +155,12 @@ public class Application_Container_Operations {
     @FindBy(how=How.ID,using="label_for_value___ctw_validate_yes")
     public WebElement manwindow;
 
+    @FindBy(how=How.ID,using="label_for_value_operation_add")
+    public WebElement add_container;
+
+    @FindBy(how=How.ID,using="label_for_value_operation_remove")
+    public WebElement remove_container;
+
     @FindBy(how=How.ID,using="value_nongcore_no")
     public WebElement nongcore_no_option;
     //*[@id="__ctw_validate"]/tbody/tr/td/strong/text()
@@ -143,6 +170,12 @@ public class Application_Container_Operations {
 
     @FindBy(how=How.XPATH,using="//*[@id=\"scroll3\"]//*[contains(text(),'is STOPPED (SHUTDOWN)')]")
     public WebElement tee_app_stop_status;
+
+    @FindBy(how=How.XPATH,using="//*[@id=\"scroll3\"]//*[contains(text(),'schema imported')]")
+    public WebElement db_add_schema_success;
+
+    @FindBy(how=How.XPATH,using="//*[@id=\"scroll3\"]//*[contains(text(),'Commiting transaction')]")
+    public WebElement deploy_domain_success;
 
     @FindBy(how=How.XPATH,using="//*[@id=\"scroll3\"]//*[contains(text(),'Admin server is down, Please start the admin server')]")
     public WebElement admin_server_stop_status;
@@ -156,6 +189,9 @@ public class Application_Container_Operations {
 
     @FindBy(how=How.XPATH,using="//*[@id=\"scroll3\"]//*[contains(text(),'has a status of RUNNING')]")
     public WebElement tee_app_start_status;
+
+    @FindBy(how=How.XPATH,using="//*[@id=\"scroll3\"]//*[contains(text(),'is RUNNING ')]")
+    public WebElement weblogic_node_manager_ruuning;
 
     @FindBy(how=How.XPATH,using="//*[@id=\"scroll3\"]//*[contains(text(),'apache processes running')]")
     public WebElement apache_running_status;
@@ -171,6 +207,15 @@ public class Application_Container_Operations {
 
     @FindBy(how=How.XPATH,using="//*[@type='text' and @id='userstomail']")
     public WebElement dump_thread_email;
+
+    @FindBy(how=How.XPATH,using="//*[@type='text' and @id='containernumber']")
+    public WebElement container_number;
+
+    @FindBy(how=How.XPATH,using="//*[@type='text' and @id='filter_servers']")
+    public WebElement server_name;
+
+    @FindBy(how=How.XPATH,using="//*[@type='checkbox']")
+    public WebElement container_checkbox;
 
     @FindBy(how=How.XPATH,using="//*[@type='text' and @id='nbthreads']")
     public WebElement dump_thread_number;
@@ -193,8 +238,21 @@ public class Application_Container_Operations {
     @FindBy(how=How.XPATH,using="//*[@type='text' and @id='waitingtime']")
     public WebElement waiting_time;
 
+
+    @FindBy(how=How.XPATH,using="//*[@type='text' and @id='databaseusername']")
+    public WebElement databaseusername;
+
+    @FindBy(how=How.XPATH,using="//*[@type='text' and @id='filter_dump_file']")
+    public WebElement dump_file;
+
+    @FindBy(how=How.ID,using="label_for_value_dump_file_")
+    public   WebElement dump_file_select;
+
     @FindBy(how=How.XPATH,using="//*[@type='text' and @id='comments']")
     public WebElement comments;
+
+    @FindBy(how=How.NAME,using="dump_file")
+    public WebElement radio_button;
 
 
     @FindBy(how=How.XPATH,using="//*[@id=\"__status\"]")
@@ -210,7 +268,23 @@ public class Application_Container_Operations {
 
     }
 
+    public int weblogicNodeManagerStatus () throws Exception
+    {
+        int k=0,i=0;
+        //WebDriverWait wait=new WebDriverWait(driver,90);
+        while(k<1&&i<5) {
+            //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"scroll3\"]//*[contains(text(),'responseHeader\":{\"status\":0')]")));
+            List<WebElement> wl = driver.findElements(By.xpath("//*[@id=\"scroll3\"]//*[contains(text(),'is RUNNING')]"));
+            //System.out.println("Waiting for one minute");
+            k= wl.size();
+            //System.out.println("Waiting for one minute");
+            Thread.sleep(60000);
+            driver.findElement(By.xpath("//*[@id=\"__reexecuteadmin\"]/input")).click();
+            i++;
+        }
+        return k;
 
+    }
 
    public Application_Container_Operations(WebDriver driver)
    {

@@ -25,6 +25,8 @@
         <class name="RCC.TestCases.Tomcat"/>
         <class name="RCC.TestCases.WebLogicManagedServer"/>
         <class name="RCC.TestCases.TEEApplication"/>
+        <class name="RCC.TestCases.WeblogicNodeManager"/>
+
 
 
 
